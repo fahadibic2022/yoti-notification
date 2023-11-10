@@ -5,7 +5,7 @@ const port = 3000; // You can change the port if needed
 
 app.use(express.json());
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.send(JSON.stringify(req));
   });
   
 app.post('/success', (req, res) => {
